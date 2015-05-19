@@ -1,0 +1,55 @@
+/* ==========================================================================
+   Font Face
+   ========================================================================== */
+
+@include font-face("Demi", 
+	font-files(	"fonts/title/Demi.ttf", 
+				"fonts/title/Demi.eot",
+				"fonts/title/Demi.woff"
+	), 
+	false, 
+	"normal", 
+	"normal"
+);
+
+@include font-face("Book", 
+	font-files(	"fonts/main/Book.ttf", 
+				"fonts/main/Book.otf",
+				"fonts/main/Book.woff",
+				"fonts/main/Book.svg"
+	), 
+	false, 
+	"normal", 
+	"normal"
+);
+
+@include font-face("Book Italic", 
+	font-files(	"fonts/italic/BookItalic.ttf", 
+				"fonts/italic/BookItalic.otf",
+				"fonts/italic/BookItalic.woff",
+				"fonts/italic/BookItalic.svg"
+	), 
+	false, 
+	"normal", 
+	"normal"
+);
+
+// Fonts
+$title: 	'Demi';
+$italic: 	'Book Italic';
+$main: 		'Book';
+
+
+
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
+
+h1,h2,h3,h4,h5,h6{@include fonts($title);}
+p, small, ul li, blockquote, a{font-size: pxtoem(18, 16); @include fonts($main);}
+
+strong{@include fonts($title); color: #428bca;}
+
+
+
+

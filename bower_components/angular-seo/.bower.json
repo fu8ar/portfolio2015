@@ -1,0 +1,14 @@
+{
+  "name": "angular-seo",
+  "homepage": "https://github.com/steeve/angular-seo",
+  "_release": "bf254df2a6",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "bf254df2a67617e025dd31fed66ad61c49206c41"
+  },
+  "_source": "git://github.com/steeve/angular-seo.git",
+  "_target": "*",
+  "_originalSource": "angular-seo",
+  "_direct": true
+}

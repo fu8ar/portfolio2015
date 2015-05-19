@@ -1,0 +1,20 @@
+<section id="blog" ng-controller="curriculumVitaeController">
+  	
+  	<div class="banner cv">
+		<div class="title">
+  			<h2>{{ cv.title }}</h2>
+		</div>
+	</div>
+		
+	<article class="blog">
+	    <div class="container">
+	      	<div class="col-sm-12">  
+	        	<div ng-bind-html="cv.content">
+					{{ cv.content }}
+    			</div>
+	      	</div>
+	    </div>
+	 </article>
+
+
+</section>
